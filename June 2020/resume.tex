@@ -1,0 +1,176 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,calibri]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% modern themes
+\moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                                
+% color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[left=0.75in,right=0.75in,top=0.60in,bottom=0.60in]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+%\usepackage{import}
+\usepackage{enumitem}
+\usepackage{url}
+% \hypersetup{linkcolor=blue}
+% \renewcommand{\baselinestretch}{0.5}
+
+% personal data
+\name{Junaid H.}{Rahim \vspace{0.3cm}}
+
+\email{junaidrahim5a@gmail.com}                               % optional, remove / comment the line if not wanted
+\homepage{junaidrahim.github.io}                         % optional, remove / comment the line if not wanted
+\phone[mobile]{+91 9673184875}                   % optional, remove / comment the line if not wanted
+% \phone[fixed]{01234 123456}                    % optional, remove / comment the line if not wanted
+% \phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+%\photo[62pt][0.2pt]{picture}                       % optional, remove / comment the line if not wanted; '62pt' is the height the picture must be resized to, 0.2pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+	%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+	%-----       resume       ---------------------------------------------------------
+	\makecvtitle
+	\vspace{-20pt}
+	\small{CSE Sophomore at KIIT, Bhubaneswar}
+	% \vspace{12pt}
+	\renewcommand\UrlFont{\color{blue}\rmfamily}
+	{\textbf{Github:} \url{github.com/junaidrahim}}
+	
+	\section{Education}
+	
+	\begin{itemize}[leftmargin=0.0in]
+		\setlength\itemsep{.2em}
+		\cventry{2019-Present}{}{Bachelor of Technology (B. Tech)}{\textmd{9.6/10.0}}{}{ \setlength{\itemindent}{.2in} \setlength\itemsep{.3em}
+			\vspace{-10pt}
+			\item[] Computer Science and Engineering, Kalinga Institute of Industrial Technology
+		}
+	\end{itemize}
+	
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%   Experience & Internships
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+	\vspace{-10pt}
+	\section{Experience and Internships}
+	
+	\begin{itemize}[leftmargin=0.0in]
+		\setlength\itemsep{.2em}
+		\vspace{-1pt}
+		
+		\cventry{March 2020 - April 2020}{Guide: Prof. Alexander Rush, Cornell NLP, Cornell University}{Volunteer - International Conference on Learning Representations}{}{}{ \setlength{\itemindent}{.2in} \setlength\itemsep{.3em}
+			\item ICLR 2020 was held virtually, worked with Prof. Rush's team to build the virtual conference portal.
+			\vspace{-1pt}
+			\item Implemented backend to manage all the submitted papers via the OpenReview API. (Python, Flask)
+			\vspace{-1pt}
+			\item The portal gathered 1M+ page views, 100k+ video watches and 80k+ chat messages
+			\vspace{-1pt}
+			\item Website: \url{https://iclr.cc/virtual_2020/index.html}, GitHub: \url{https://github.com/ICLR/iclr.github.io}
+		}
+		
+		\cventry{August 2019 - Present}{Desire Foundation}{Full Stack Web Developer}{}{}{ \setlength{\itemindent}{.2in} \setlength\itemsep{.3em}
+			\item Developed a web based solution to automate and improve the data management process for the sales department. (React, Firebase, TravisCI)
+			\vspace{-1pt}
+			\item Working on the next phase of the official website and the blog site. (GatsbyJS, TypeScript, MySQL)
+		}
+		
+		\cventry{September 2019 - Present}{Developer Student Clubs KIIT}{Developer - Web Team}{}{}{ \setlength{\itemindent}{.2in} \setlength\itemsep{.3em}
+			\item Developed the web portal to conduct 'devhack' - an online week long hackathon. Implemented a serverless system for registration, login, submissions and judging. \url{https://github.com/DSC-KIIT/devhack}
+			\vspace{-1pt}
+			\item Developed the website for the techincal fest of DSC KIIT. \url{https://github.com/DSC-KIIT/DevExpo2020}
+		}
+		
+	\end{itemize}
+	
+	\section{Technical Strengths}
+	
+	\begin{itemize}[leftmargin=.2in]
+		\setlength\itemsep{.2em}
+		
+		\item \textbf{Programming Languages:} Python, JavaScript, C/C++, Go
+		\vspace{-1pt}
+		\item \textbf{Development:} React, GatsbyJS, TypeScript, NodeJS, Flask, Echo, Android (Kotlin)
+		\vspace{-1pt}
+		\item \textbf{Databases:} MongoDB, MySQL
+		\vspace{-1pt}
+		\item \textbf{Others:} Git, Linux, SQL, CI/CD, Docker, Microsoft Azure, Firebase, \LaTeX
+		
+	\end{itemize}
+	
+	\section{Key Projects}
+	
+	\begin{itemize}[leftmargin=0.0in]
+		\setlength\itemsep{.2em}
+		
+		\cventry{December 2019}{Smart India Hackathon, 2020}{Plothole - AI powered Pothole Reporting}{}{}{ \setlength{\itemindent}{.2in} \setlength\itemsep{.2em}
+			\item Developed an end to end AI powered pothole reporting system. Photos of potholes clicked by citizens are classified by CNN's (VGG-16) to determine validity and severity. \url{https://github.com/teambitflip}
+			\item Implemented android app, web dashboard and cloud infrastructure (Kotlin, React, Flask, Redis, MS Azure)
+		}
+		
+		\cventry{Dec 2018}{Lagrange Interpolation in C++}{Program Homework Solver}{}{}{ \setlength{\itemindent}{.2in} \setlength\itemsep{.2em}
+			\item Implemented \textbf{Lagrange Interpolation} in C++ to generalize the function from the first few terms of a series and generate source code to print till the $nth$ term of that series.
+			\item \url{https://github.com/junaidrahim/program-homework-solver}
+		}
+		
+		
+	\end{itemize}
+	
+	
+	\section{Extracurriculars}
+	
+	Content Writing, Stock Trading, Volunteer work with Desire Foundation to help underprivileged children secure admissions in private schools under RTE Section 12(1)(c)
+	
+	
+	\vfill
+	\textnormal{\footnotesize Last Updated on \today. Hyperlinks at appropriate places}
+	
+	% Publications from a BibTeX file without multibib
+	%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+	%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+%	\nocite{*}
+%	\bibliographystyle{plain}
+%	\bibliography{publications}                        % 'publications' is the name of a BibTeX file
+	
+	% Publications from a BibTeX file using the multibib package
+	%\section{Publications}
+	%\nocitebook{book1,book2}
+	%\bibliographystylebook{plain}
+	%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+	%\nocitemisc{misc1,misc2,misc3}
+	%\bibliographystylemisc{plain}
+	%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+	
+	%-----       letter       ---------------------------------------------------------
+	
+\end{document}
+
+
+%% end of file `template.tex'.
