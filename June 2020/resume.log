@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.4.27)  18 JUL 2020 20:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.4.27)  25 NOV 2020 00:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -611,36 +611,35 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <7> on input line 65.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 65.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 173.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 179.
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 173.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 179.
  (./resume.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 173.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 173.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 179.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 179.
 Package rerunfilecheck Info: File `resume.out' has not changed.
-(rerunfilecheck)             Checksum: 553E207BEE4399B52EF096647ACD029C;637.
+(rerunfilecheck)             Checksum: D3A1D88F70238EA92CC9001AA7FE3A6E;759.
  ) 
 Here is how much of TeX's memory you used:
- 14305 strings out of 483107
- 217747 string characters out of 5964630
- 505835 words of memory out of 5000000
+ 14301 strings out of 483107
+ 217707 string characters out of 5964630
+ 506835 words of memory out of 5000000
  29076 multiletter control sequences out of 15000+600000
- 590278 words of font info for 72 fonts, out of 8000000 for 9000
+ 589998 words of font info for 70 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
  51i,11n,49p,772b,424s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/en
-c/dvips/tex-gyre/q-ec.enc}{/usr/share/texmf/fonts/enc/dvips/tex-gyre/q-ts1.enc}
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/fontawesome/fontawesometwo.enc}<
-/usr/share/texlive/texmf-dist/fonts/type1/public/fontawesome/FontAwesome.pfb></
-usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/
-public/tex-gyre/qplb.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qplr.pfb
-></usr/share/texmf/fonts/type1/public/tex-gyre/qplri.pfb>
-Output written on resume.pdf (1 page, 207948 bytes).
+{/usr/share/texmf/fonts/enc/dvips/tex-gyre/q-ec.enc}{/usr/share/texmf/fonts/e
+nc/dvips/tex-gyre/q-ts1.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/font
+awesome/fontawesometwo.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/fo
+ntawesome/FontAwesome.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qplb.pf
+b></usr/share/texmf/fonts/type1/public/tex-gyre/qplr.pfb></usr/share/texmf/font
+s/type1/public/tex-gyre/qplri.pfb>
+Output written on resume.pdf (1 page, 200517 bytes).
 PDF statistics:
- 71 PDF objects out of 1000 (max. 8388607)
- 62 compressed objects within 1 object stream
+ 67 PDF objects out of 1000 (max. 8388607)
+ 59 compressed objects within 1 object stream
  7 named destinations out of 1000 (max. 500000)
  15401 words of extra memory for PDF output out of 17280 (max. 10000000)
 
