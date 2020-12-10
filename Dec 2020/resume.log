@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.4.27)  10 DEC 2020 12:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.4.27)  10 DEC 2020 19:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -634,7 +634,7 @@ Package rerunfilecheck Info: File `resume.out' has not changed.
 Here is how much of TeX's memory you used:
  14319 strings out of 483107
  217948 string characters out of 5964630
- 506565 words of memory out of 5000000
+ 506558 words of memory out of 5000000
  29085 multiletter control sequences out of 15000+600000
  599144 words of font info for 76 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
@@ -645,7 +645,7 @@ awesome/fontawesometwo.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/fo
 ntawesome/FontAwesome.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qplb.pf
 b></usr/share/texmf/fonts/type1/public/tex-gyre/qplr.pfb></usr/share/texmf/font
 s/type1/public/tex-gyre/qplri.pfb>
-Output written on resume.pdf (1 page, 202202 bytes).
+Output written on resume.pdf (1 page, 202187 bytes).
 PDF statistics:
  73 PDF objects out of 1000 (max. 8388607)
  65 compressed objects within 1 object stream
