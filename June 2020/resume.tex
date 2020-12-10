@@ -27,11 +27,20 @@
 %\usepackage{import}
 \usepackage{enumitem}
 \usepackage{url}
+\AfterPreamble{
+	\hypersetup{
+		pdfauthor={...},
+		pdftitle={...},
+		pdfsubject={...},
+		urlcolor=blue,
+	}
+}
+
 %\hypersetup{linkcolor=blue}
 % \renewcommand{\baselinestretch}{0.5}
 
 % personal data
-\name{Junaid H.}{Rahim \vspace{0.3cm}}
+\name{Junaid H.}{Rahim \vspace{0.2cm}}
 
 \email{junaidrahim5a@gmail.com}                               % optional, remove / comment the line if not wanted
 \homepage{junaidrahim.github.io}                         % optional, remove / comment the line if not wanted
@@ -58,11 +67,10 @@
 	%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
 	%-----       resume       ---------------------------------------------------------
 	\makecvtitle
-	\vspace{-20pt}
-	\small{CSE Sophomore at KIIT, Bhubaneswar}
-	% \vspace{12pt}
+	\vspace{-35pt}
+
+	\small
 	\renewcommand\UrlFont{\color{blue}\rmfamily}
-	{\textbf{Github:} \url{github.com/junaidrahim}}
 	
 	\section{Education}
 	
@@ -79,7 +87,7 @@
 	%   Experience & Internships
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	
-	\vspace{-10pt}
+	\vspace{-22pt}
 	\section{Experience and Open Source Work}
 	
 	\begin{itemize}[leftmargin=0.0in]
@@ -87,66 +95,84 @@
 		\vspace{-1pt}
 		
 		\cventry{March 2020 - April 2020}{Guide: Prof. Alexander Rush, Cornell NLP, Cornell University}{International Conference on Learning Representations}{}{}{ \setlength{\itemindent}{.2in} \setlength\itemsep{.3em}
-			\item ICLR 2020 was virtual, worked with Prof. Rush's team to build the open source virtual conference portal.
-			\vspace{-1pt}
-			\item Implemented backend to manage all the submitted papers via the OpenReview API. (Python, Flask)
-			\vspace{-1pt}
+			\item Worked with Prof. Rush's team to build the open source virtual conference portal for ICLR 2020. Implemented backend to manage all the submitted papers via the OpenReview API. (Python, Flask) [\href{https://iclr.cc/virtual_2020/index.html}{website}] [\href{https://github.com/ICLR/iclr.github.io}{github}]
+			\vspace{-3pt}
 			\item The portal gathered 1M+ page views, 100k+ video watches and 80k+ chat messages
-			\vspace{-1pt}
-			\item Website: \url{https://iclr.cc/virtual_2020/index.html}, GitHub: \url{https://github.com/ICLR/iclr.github.io}
 		}
 	
 		\cventry{September 2019 - Present}{Developer Student Clubs KIIT}{Developer - Web Team}{}{}{ \setlength{\itemindent}{.2in} \setlength\itemsep{.3em}
-			\item Developed the internal URL redirect service, handling over 1k redirects at peak load. Improved latency and throughput using hashmaps, caching and multi-threading \url{https://github.com/DSC-KIIT/divert}
-			\vspace{-1pt}
-			\item Developed the participant web portal for 'devhack' - an online hackathon. Implemented a serverless system for registration, login, submissions and judging. \url{https://github.com/DSC-KIIT/devhack}
+			\item Developed \textbf{\href{https://github.com/DSC-KIIT/divert}{Divert}} - the internal URL redirect service, handling over 1k redirects at peak load. Improved latency and throughput using hashmaps, caching and multi-threading.
+			\vspace{-3pt}
+			\item Developed the participant web portal for \href{https://github.com/DSC-KIIT/devhack}{\textbf{devhack}} - an online hackathon. Implemented a serverless system for registration, login, submissions and judging.
 		}
 		
 		\cventry{August 2019 - Present}{Desire Foundation}{Full Stack Web Developer}{}{}{ \setlength{\itemindent}{.2in} \setlength\itemsep{.3em}
 			\item Developed a web based solution to automate and improve the data management of the sales department. (React, Firebase, TravisCI)
-			\vspace{-1pt}
+			\vspace{-3pt}
 			\item Rebuilt the website and the blog site for improved performance and aesthetic. (GatsbyJS, TypeScript, MySQL)
 		}
 	\end{itemize}
 	
+	\vspace{-12pt}
 	\section{Technical Strengths}
 	
 	\begin{itemize}[leftmargin=.2in]
 		\setlength\itemsep{.2em}
 		
 		\item \textbf{Programming Languages:} Python, Javascript, C/C++, Golang
-		\vspace{-1pt}
+		\vspace{-4pt}
 		\item \textbf{Development:} React, PyTorch, Scikit-learn,  Pandas, Flask, Echo, NodeJS, Typescript
-		\vspace{-1pt}
+		\vspace{-4pt}
 		\item \textbf{Databases:} MongoDB, MySQL
-		\vspace{-1pt}
+		\vspace{-4pt}
 		\item \textbf{Others:} Git, Linux, SQL, CI/CD, Docker, MS Azure, AWS, Firebase, \LaTeX
 		
 	\end{itemize}
+
+	\vspace{-15pt}
+	\section{Publications}
 	
+	\begin{enumerate}
+		\item \textbf{Neural Network based Optimized Pruning Strategy for
+			Statistical Machine Translation} Junaid Rahim, Biswaroop Bhattacharjee, Lekhansh Ruprela, and Dr. Debajyoti Banik. Submitted for review in \textit{Journal of Machine Learning Research}.
+		
+		\item \textbf{Predicting Semen Motility using three-dimensional
+			Convolutional Neural Networks} Priyansi, Biswaroop Bhattacharjee, and Junaid Rahim. In \textit{Project Innovation Contest, Proceedings of the 17th International Conference On Distributed Computing And Internet Technology.
+		}
+	\end{enumerate}
+	
+	\vspace{-15pt}
 	\section{Key Projects}
 	
 	\begin{itemize}[leftmargin=0.0in]
 		\setlength\itemsep{.2em}
 		
-		\cventry{Sept 2020}{An Experimental OS written entirely from scratch.}{HalideOS}{}{}{ \setlength{\itemindent}{.2in} \setlength\itemsep{.2em}
-			\item A bare bones x86 operating system written in C++. Implemented the framebuffer, shell and a mini standard library for console programs. \url{https://github.com/DSC-KIIT/project-halide}
+		\cventry{Nov 2020}{Data Hackathon 2020 - IGDTUW}{\href{https://gitlab.com/innerve/sperm-motility-analysis}{Sperm Motility Prediction using 3D ResNets}}{}{}{ \setlength{\itemindent}{.2in} \setlength\itemsep{.2em}
+			\item Uses spatial temporal 3D Residual neural networks to predict sperm motility from videos and tabular data.
+			\vspace{-3pt}
+		}
+
+		\cventry{Sept 2020}{An Experimental OS written entirely from scratch.}{\href{https://github.com/DSC-KIIT/project-halide}{HalideOS}}{}{}{ \setlength{\itemindent}{.2in} \setlength\itemsep{.2em}
+			\item A bare bones x86 operating system written in C++. Implemented the framebuffer, shell and a mini standard library for console programs. \url{}
 		}
 	
-		\cventry{December 2019}{Smart India Hackathon, 2020}{Plothole - AI powered Pothole Reporting}{}{}{ \setlength{\itemindent}{.2in} \setlength\itemsep{.2em}
-			\item Developed an end to end AI powered pothole reporting system. Photos of potholes clicked by citizens are classified by CNN's (VGG-16) to determine validity and severity. \url{https://github.com/teambitflip}
+		\cventry{December 2019}{Smart India Hackathon, 2020}{\href{https://github.com/teambitflip}{Plothole - AI powered Pothole Reporting}}{}{}{ \setlength{\itemindent}{.2in} \setlength\itemsep{.2em}
+			\item Developed an end to end AI powered pothole reporting system. Photos of potholes clicked by citizens are classified by CNN's (VGG-16) to determine validity and severity.
+			\vspace{-3pt}
 			\item Implemented android app, web dashboard and cloud infrastructure (Kotlin, React, Flask, Redis, MS Azure)
 		}
 		
 		
 	\end{itemize}
 
-	\section{Achievements and Extracurriculars}
+	\subsection{Achievements and Extracurriculars}
 	
 	\begin{itemize}
-		\item Won \textbf{2nd Prize} in Innerve Data Hackathon, 2020 organised by IGDTUW - Trained 3D CNN's to predict sperm motility from semen sample videos \url{https://gitlab.com/innerve/sperm-motility-analysis}
-		
-		\item Launched \textbf{AI Research Newsletter - KIIT} - A weekly newsletter to share latest popular research papers in ML, DL, and Mathematics among the students of KIIT
+		\item Secured \textbf{2nd Prize} in Innerve Data Hackathon, 2020 organised by IGDTUW
+		\vspace{-4pt}
+%		\item Started \textbf{AI Research Newsletter - KIIT} - A weekly student newsletter to share latest research papers in STEM.
+%		\vspace{-4pt}
+		\item Secured \textbf{3714th} place in Google Hash Code 2020.
 	\end{itemize}
 	
 	
