@@ -1,0 +1,215 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,calibri]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% modern themes
+\moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                                
+% color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[left=0.75in,right=0.75in,top=0.60in,bottom=0.60in]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+%\usepackage{import}
+\usepackage{enumitem}
+\usepackage{url}
+\AfterPreamble{
+	\hypersetup{
+		pdfauthor={...},
+		pdftitle={...},
+		pdfsubject={...},
+		urlcolor=blue,
+	}
+}
+
+%\hypersetup{linkcolor=blue}
+% \renewcommand{\baselinestretch}{0.5}
+
+% personal data
+\name{Junaid H.}{Rahim \vspace{0.2cm}}
+
+\email{junaidrahim5a@gmail.com}                               % optional, remove / comment the line if not wanted
+\homepage{junaidrahim.in}                         % optional, remove / comment the line if not wanted
+\phone[mobile]{+91 9673184875}                   % optional, remove / comment the line if not wanted
+% \phone[fixed]{01234 123456}                    % optional, remove / comment the line if not wanted
+% \phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+%\photo[62pt][0.2pt]{picture}                       % optional, remove / comment the line if not wanted; '62pt' is the height the picture must be resized to, 0.2pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+	%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+	%-----       resume       ---------------------------------------------------------
+	\makecvtitle
+	\vspace{-35pt}
+
+	\small
+	\renewcommand\UrlFont{\color{blue}\rmfamily}
+	
+	\section{Education}
+	
+	\begin{itemize}[leftmargin=0.0in]
+		\setlength\itemsep{.2em}
+		\cventry{2019-Present}{}{Bachelor of Technology (B. Tech)}{\textmd{9.73/10.0}}{}{ \setlength{\itemindent}{.2in} \setlength\itemsep{.3em}
+			\vspace{-10pt}
+			\item[] Computer Science and Engineering, Kalinga Institute of Industrial Technology
+		}
+	\end{itemize}
+	
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%   Experience & Internships
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+	\vspace{-22pt}
+	\section{Experience and Open Source Work}
+	
+	\begin{itemize}[leftmargin=0.0in]
+		\setlength\itemsep{.2em}
+		\vspace{-1pt}
+		
+		\cventry{Dec 2020 - Jan 2021}{\href{https://theyellowfilter.net/}{The Yellow Filter}}{Freelance Web Developer}{}{}{ \setlength{\itemindent}{.2in} \setlength\itemsep{.3em}
+			\item Developed and deployed the company \href{https://theyellowfilter.net/}{portfilio website} to improve outreach. Used Gatsby and Firebase.
+		}
+				
+		\cventry{March 2020 - April 2020}{Guide: Prof. Alexander Rush, Cornell NLP, Cornell University}{International Conference on Learning Representations}{}{}{ \setlength{\itemindent}{.2in} \setlength\itemsep{.3em}
+			\item Worked with Prof. Rush's team to build the open source virtual conference portal for ICLR 2020. Implemented backend to manage all the submitted papers via the OpenReview API. (Python, Flask) [\href{https://iclr.cc/virtual_2020/index.html}{website}] [\href{https://github.com/ICLR/iclr.github.io}{github}]
+			\vspace{-3pt}
+			\item The portal gathered 1M+ page views, 100k+ video watches and 80k+ chat messages
+		}
+	
+		\cventry{September 2019 - Present}{Developer Student Clubs KIIT}{Web Team Lead}{}{}{ \setlength{\itemindent}{.2in} \setlength\itemsep{.3em}
+			\item Developed \textbf{\href{https://github.com/DSC-KIIT/divert}{Divert}} - the internal URL redirect service, handling over 1k redirects at peak load. Improved latency and throughput using hashmaps, caching and multi-threading.
+			\vspace{-3pt}
+			\item Developed the participant web portal for \href{https://github.com/DSC-KIIT/devhack}{\textbf{devhack}} - an online hackathon. Implemented a serverless system for registration, login, submissions and judging.
+		}
+		
+		\cventry{August 2019 - Present}{Desire Foundation}{Full Stack Web Developer}{}{}{ \setlength{\itemindent}{.2in} \setlength\itemsep{.3em}
+			\item Developed a web based solution to automate and improve the data management of the sales department. (React, Firebase, TravisCI)
+			\vspace{-3pt}
+			\item Rebuilt the official blog for improved performance and aesthetic. (GatsbyJS, TypeScript, MySQL)
+		}
+	\end{itemize}
+	
+	\vspace{-12pt}
+	\section{Technical Strengths}
+	
+	\begin{itemize}[leftmargin=.2in]
+		\setlength\itemsep{.2em}
+		
+		\item \textbf{Programming Languages:} Python, Golang, Javascript, C/C++
+		\vspace{-4pt}
+		\item \textbf{Development:} NodeJS, Flask, Echo, React, Gatsby, Next.js, TypeScript, Pytorch, Scikit-learn, Pandas, Numpy
+		\vspace{-4pt}
+		\item \textbf{Databases:} MongoDB, MySQL
+		\vspace{-4pt}
+		\item \textbf{Others:} Git, Linux, SQL, CI/CD, Docker, MS Azure, AWS, Firebase, \LaTeX
+		
+	\end{itemize}
+	
+	\vspace{-15pt}
+	\section{Key Projects}
+	
+	\begin{itemize}[leftmargin=0.0in]
+		\setlength\itemsep{.2em}
+
+		\cventry{Sept 2020}{An Experimental OS written entirely from scratch.}{\href{https://github.com/DSC-KIIT/project-halide}{HalideOS}}{}{}{ \setlength{\itemindent}{.2in} \setlength\itemsep{.2em}
+			\item A bare bones x86 operating system written in C++. Implemented the framebuffer, shell and a mini standard library for console programs. \url{}
+		}
+	
+		\cventry{December 2019}{Smart India Hackathon, 2020}{\href{https://github.com/teambitflip}{Plothole - AI powered Pothole Reporting}}{}{}{ \setlength{\itemindent}{.2in} \setlength\itemsep{.2em}
+			\item Developed an end to end AI powered pothole reporting system. Photos of potholes clicked by citizens are classified by CNN's (VGG-16) to determine validity and severity.
+			\vspace{-3pt}
+			\item Implemented android app, web dashboard and cloud infrastructure (Kotlin, React, Flask, Redis, MS Azure)
+		}
+	
+		\textbf{Other Projects}
+		\vspace{-5pt}
+		\begin{itemize}
+			\item \href{https://github.com/junaidrahim/dogetick}{dogetick}, 
+				  \href{https://github.com/junaidrahim/locate-route}{locate-route}, \href{https://github.com/junaidrahim/code-to-pdf}{code-to-pdf}, 	\href{https://kiithacktoberfest.netlify.app/}{KIIT Hacktoberfest Website}, 
+				  \href{https://devexpo2020.firebaseapp.com/}{DevExpo 2020 Website}.
+		\end{itemize}
+	\end{itemize}
+
+	\vspace{-7pt}
+	\subsection{Publications}
+	
+	\begin{enumerate}
+		%		\item \textbf{Neural Network based Optimized Pruning Strategy for
+		%			Statistical Machine Translation} Junaid Rahim, Biswaroop Bhattacharjee, Lekhansh Ruprela, and Dr. Debajyoti Banik. Submitted for review in \textit{Journal of Machine Learning Research}.
+		
+		\item \href{https://arxiv.org/abs/2101.02888}{\textbf{Predicting Semen Motility using three-dimensional
+				Convolutional Neural Networks}} Priyansi, Biswaroop Bhattacharjee, and Junaid Rahim. In \textit{Project Innovations in Distributed Computing and Internet Technology, 17th International Conference On Distributed Computing And Internet Technology.
+		}
+	\end{enumerate}
+
+	\vspace{-7pt}
+	\subsection{Achievements and Extracurriculars}
+	
+	\begin{itemize}
+		\item Secured \textbf{2nd Prize} in Innerve Data Hackathon, 2020 organised by IGDTUW. \href{https://gitlab.com/innerve/sperm-motility-analysis}{ [project link]}
+		\vspace{-4pt}
+		\item Won \textbf{3rd Best Paper} Award in 10th Project Innovation Contest, 17th ICDCIT
+		\vspace{-4pt}
+%		\item Started \textbf{\href{http://weekly.researchnewsletter.ml/}{Weekly Research Newsletter - KIIT}} - A student research newsletter to share latest research papers in CS and AI.
+		\vspace{-4pt}
+	\end{itemize}
+	
+	
+%	\section{Extracurriculars}
+%	
+%	Content Writing, Stock Trading, Volunteer work with Desire Foundation to help underprivileged children secure admissions in private schools under RTE Section 12(1)(c)
+	
+	
+	\vfill
+	\textnormal{\footnotesize Last Updated on \today. Hyperlinks at appropriate places}
+	
+	% Publications from a BibTeX file without multibib
+	%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+	%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+%	\nocite{*}
+%	\bibliographystyle{plain}
+%	\bibliography{publications}                        % 'publications' is the name of a BibTeX file
+	
+	% Publications from a BibTeX file using the multibib package
+	%\section{Publications}
+	%\nocitebook{book1,book2}
+	%\bibliographystylebook{plain}
+	%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+	%\nocitemisc{misc1,misc2,misc3}
+	%\bibliographystylemisc{plain}
+	%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+	
+	%-----       letter       ---------------------------------------------------------
+	
+\end{document}
+
+
+%% end of file `template.tex'.
