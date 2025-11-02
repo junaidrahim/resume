@@ -1,0 +1,274 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,calibri]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% modern themes
+\moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{purple}                                
+% color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[left=0.75in,right=0.75in,top=0.60in,bottom=0.60in]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+%\usepackage{import}
+\usepackage{enumitem}
+\usepackage{url}
+\AfterPreamble{
+	\hypersetup{
+		pdfauthor={...},
+		pdftitle={...},
+		pdfsubject={...},
+		urlcolor=blue,
+	}
+}
+
+%\hypersetup{linkcolor=blue}
+% \renewcommand{\baselinestretch}{0.5}
+
+% personal data
+\name{Junaid}{Rahim \vspace{8pt}}
+
+\email{junaidrahim5a@gmail.com}                               % optional, remove / comment the line if not wanted
+\homepage{junaid.foo}                         % optional, remove / comment the line if not wanted
+\phone[mobile]{+91 9673184875}                   % optional, remove / comment the line if not wanted
+% \phone[fixed]{01234 123456}                    % optional, remove / comment the line if not wanted
+% \phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+%\photo[62pt][0.2pt]{picture}                       % optional, remove / comment the line if not wanted; '62pt' is the height the picture must be resized to, 0.2pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+	%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+	%-----       resume       ---------------------------------------------------------
+	\makecvtitle
+	\vspace{-35pt}
+
+	\small
+	\renewcommand\UrlFont{\color{blue}\rmfamily}
+	
+	\section{Professional Experience}
+	
+	\begin{itemize}[leftmargin=0.0in]
+		\setlength\itemsep{.2em}
+		
+		\cventry
+			{July 2023 - Present}
+			{Software Engineer II}
+			{\href{https://atlan.com}{\href{https://atlan.com}{Atlan Pte. Ltd.}} \vspace{5pt}}
+			{Remote}
+			{}
+		{ 
+			\setlength{\itemindent}{.2in} 
+			\setlength\itemsep{.3em}
+			\item Architected and led the implementation of the central publishing service with parquet-based WAL architecture processing \textbf{600M+ entity changes daily}. Achieved \textbf{50\% runtime improvement} through resumable workflows, time-travel and rollback capabilities.
+			\item Core contributor to the Atlan App SDK powering \textbf{30+ partners} and all internal teams. Reduced app development-to-deployment cycle to \textbf{1 week}, with partners launching \textbf{10+ marketplace apps}.
+			\item Designed universal MCP integration for App SDK making all Temporal-based apps MCP servers with single config change. Enabled \textbf{20+ apps} to expose activities as MCP tools without code modifications.
+			\item Accelerated entity diff-ing by \textbf{5x} for \textbf{100GB+ scale JSON datasets} using Merkle tree comparisons and hash bucket partitioning removing the single-pod bottleneck enabling unlimited parallel processing.
+			\item Implemented ring-based release controller with GitHub Actions enabling cohort deployments reducing production regressions by \textbf{90\%} across \textbf{4000+ releases} while enabling confident, gradual rollouts.
+			\item Built the internal agent platform using LangGraph and LangMem improving SDLC process with automated release control, code quality and quality assurance agents.
+		}
+		
+		\cventry
+			{Jan 2022 - July 2023}
+			{Software Engineer I\vspace{2pt}}
+			{}
+			{}
+			{}
+		{ 
+			\setlength{\itemindent}{.2in} 
+			\setlength\itemsep{.3em}
+			\item Led the optimization effort for the search library used in pipelines achieving \textbf{500x improvement in P99 query latency}. Implemented domain-specific inverted indexes and intelligent disk spilling with SQLite.
+			\item Improved internal spill-to-disk library performance by \textbf{75\%} across multiple connectors through SQLite parameter tuning, LRU caching, and optimized indexes. 			
+			\item Designed metadata schemas for \textbf{12+ BI connectors} outlining attributes, relationships, and lineage patterns which became standard for all \textbf{300+ enterprise customers}.
+			\item Implemented end-to-end column-level lineage from warehouse tables to dashboard widgets for Tableau, Looker, PowerBI, dbt, and Sigma. Achieved widget-level granularity tracking data flow across \textbf{50M+ dashboard elements}.
+			\item Designed, implemented and advocated the lineage graph framework for BI connectors leveraging tree pruning, lazy evaluation, and spill-to-disk patterns. Improved runtime by \textbf{90\%} and reduced missing lineage support tickets by \textbf{50\%}.
+			\item Implemented the schema drift detection system to safeguard against flaky upstream metadata APIs. Automated circuit breakers prevented \textbf{100+ potential data loss incidents} from harmful delete operations.
+			\item Migrated analytical pipelines from JSONL to Parquet using DuckDB. Reduced processing time by \textbf{80\%} for pipelines handling \textbf{100M+ records}.
+			\item Designed and implemented the Fivetran connector supporting \textbf{200+ upstream data source types} with automated schema detection, eventually improving orphaned asset detection. 
+			\item Built multiple dbt connector versions generating lineage for both model-level and warehouse-level assets powering an improved experience for analytics engineers using Atlan.
+			\item Built PowerBI M query lineage extractor leveraging open-source parsers to traverse PowerQuery ASTs. Increased lineage coverage by \textbf{15\%} for \textbf{32M+ assets}, surfacing complex data lineage for \textbf{50+ customers}.
+			\item Reduced connector development time by \textbf{70\%} (from \textbf{30 to 10 days}) through internal tooling, reusable libraries, and GitHub Actions automation. This acceleration enabled the team to ship \textbf{20+ additional connectors} within the first year.
+			\item Resolved \textbf{100s of initial connector support tickets} post-launch. Established first QA and support functions with internal tooling, documentation, and observability frameworks.
+			\item Implemented the data quality offering using Soda with SQL pushdown to warehouses, this enabled automated quality checks across data assets without data movement.
+			\item Created company's internal documentation platform (Kryptonite) inspired by g3doc for docs-as-code use-cases, serving \textbf{8k+ weekly page hits} across all engineering repositories with automated API and test coverage documentation.
+		}
+		
+		\vfill
+		
+		\cventry
+			{July 2021 - Dec 2022}
+			{Software Engineering Intern\vspace{5pt}}
+			{}
+			{}
+			{}
+		{ 
+			\setlength{\itemindent}{.2in} 
+			\setlength\itemsep{.3em}
+			\item Designed and shipped \textbf{5 foundational metadata connectors} (Snowflake, Tableau, PowerBI, PostgreSQL and Looker) using python and argo workflows. Presently deployed across \textbf{98\% of enterprise customer base} and process \textbf{800M+ metadata assets daily} across \textbf{3.7k customer data sources}.
+			\item Implemented end-to-end lineage generation capabilities in BI connectors achieving \textbf{70\%+ lineage coverage} across metadata assets providing critical data flow visibility for governance and impact analysis.
+			\item Established core marketplace platform components including composable UI configs, central registry, and standardized workflow templates. These foundations now support the entire connector marketplace used by \textbf{30+ engineers}.
+			\item Designed and implemented \href{https://docs.atlan.com/product/capabilities/playbooks}{Atlan Playbooks}, a drag-and-drop feature to bulk-edit metadata. Replaced manual CSM scripts with \textbf{4000+ playbooks}, eliminating hundreds of hours of repetitive work.
+		}
+
+		\vspace{10pt}
+		
+		\cventry
+			{March 2020 - April 2020}
+			{Guide: Prof. Alexander Rush, Cornell NLP, Cornell University\vspace{5pt}}
+			{International Conference on Learning Representations\vspace{2pt}}
+			{Remote}
+			{}
+			{ 
+				\setlength{\itemindent}{.2in} \setlength\itemsep{.3em}
+				\item Worked with Prof. Rush's team to build the open source virtual conference portal for ICLR 2020. Implemented backend to manage all the submitted papers via the OpenReview API. (Python, Flask) [\href{https://iclr.cc/virtual_2020/index.html}{website}] [\href{https://github.com/ICLR/iclr.github.io}{github}]
+				\item The portal gathered \textbf{1M+ page views}, \textbf{100k+ video watches} and \textbf{80k+ chat messages}
+		}
+	\end{itemize}
+	
+	\section{Open-source Projects}
+	
+	\begin{itemize}[leftmargin=0.0in]
+	
+		\cventry
+			{Jan 2025}
+			{Python SDK to build apps on the Atlan platform}
+			{\href{https://github.com/atlanhq/application-sdk}{Atlan App SDK}}{}{}
+			{ \setlength{\itemindent}{.2in} \setlength\itemsep{.2em}
+			\item The SDK offers a complete Platform-as-a-Service (PaaS) toolkit that enables developers to create integrations, data processing workflows, and custom applications that seamlessly extend the Atlan experience.
+		}	
+		
+		\cventry
+			{Nov 2022}
+			{CLI to ship Argo Workflows in packages}
+			{\href{https://github.com/atlanhq/argopm}{argopm}}{}{}
+			{ \setlength{\itemindent}{.2in} \setlength\itemsep{.2em}
+			\item Package manager for Argo Workflows. It enables developers to distribute and consume argo workflow templates as reusable modules.
+		}	
+		
+		\cventry
+			{Sept 2020}
+			{An Experimental OS written entirely from scratch.}
+			{\href{https://github.com/DSC-KIIT/project-halide}{HalideOS}}{}{}
+			{ \setlength{\itemindent}{.2in} \setlength\itemsep{.2em}
+			\item A bare bones x86 operating system written in C++. Implemented the framebuffer, shell and a mini standard library for console programs. 
+		}
+		
+	\end{itemize}
+	
+	\section{Publications and Talks}
+	
+	\begin{enumerate}
+	\item 
+		\href{https://junaid.foo/talks/duckdb-scalable-pipelines/}
+		{\textbf{Scalable Data Pipelines with DuckDB at DuckCon 2024}} 
+		
+		Presented in-person at DuckCon 2024 in Seattle.
+	
+	\item 
+		\href{https://junaid.foo/talks/shipping-argo-workflows-in-packages}
+		{\textbf{Shipping Argo Workflows in Packages at KubeCon 2023}} 
+		
+		Presented in-person at \href{https://colocatedeventseu2023.sched.com/type/ArgoCon}{ArgoCon 2023 hosted w/ KubeCon Europe 2023} in Amsterdam.
+		
+		\item \href{https://arxiv.org/abs/2101.02888}{\textbf{Predicting Semen Motility using three-dimensional
+			Convolutional Neural Networks}} Priyansi, Biswaroop Bhattacharjee, and Junaid Rahim. In \textit{17th International Conference On Distributed Computing And Internet Technology.
+		}
+	\end{enumerate}
+	
+	\section{Education}
+
+	\begin{itemize}[leftmargin=0.0in]
+		\setlength\itemsep{.2em}
+		\cventry{2019-2023}{}{Bachelor of Technology (B. Tech)}{\textmd{9.04/10.0}}{}{ \setlength{\itemindent}{.2in} \setlength\itemsep{.3em}
+			\vspace{-10pt}
+			\item[] Computer Science and Engineering, Kalinga Institute of Industrial Technology
+		}
+	
+	\end{itemize}
+
+	\section{Technical Strengths}
+	
+	\begin{itemize}[leftmargin=.2in]
+		\setlength\itemsep{.2em}
+		
+		\item \textbf{Languages:} Python (primary), Go, Rust, Typescript and SQL.
+		\vspace{-4pt}
+		\item \textbf{LLMs \& Agents:} LangChain \& LangGraph, MCP and PyTorch.
+		\vspace{-4pt}
+		\item \textbf{Data \& Workflow Orchestration:} Argo Workflows, Temporal, Daft, Apache Spark, dbt and OpenLineage.
+		\vspace{-4pt}
+		\item \textbf{Databases \& Storage:} SQLite, DuckDB, PostgreSQL, Apache Iceberg, Snowflake and BigQuery.
+		\vspace{-4pt}
+		\item \textbf{Infrastructure:} Kubernetes, vCluster, Dapr, Github Actions, AWS (EC2, S3, EKS) and Victoria Metrics.
+		
+	\end{itemize}
+
+
+%	\subsection{Achievements and Extracurriculars}
+%	
+%	\begin{itemize}
+%		\item Secured \textbf{2nd Prize} in Innerve Data Hackathon, 2020 organised by IGDTUW
+%		\vspace{-4pt}
+%		\item Won \textbf{3rd Best Paper} Award in 10th Project Innovation Contest, 17th ICDCIT
+%		\vspace{-4pt}
+%		\item Started \textbf{AI Research Newsletter - KIIT} - A weekly student  newsletter to share latest research papers in STEM.
+%		\vspace{-4pt}
+%		\item Secured \textbf{3714th} place in Google Hash Code 2020.
+%	\end{itemize}
+	
+	
+%	\section{Extracurriculars}
+%	
+%	Content Writing, Stock Trading, Volunteer work with Desire Foundation to help underprivileged children secure admissions in private schools under RTE Section 12(1)(c)
+	
+	\vfill
+	\textnormal{\footnotesize Last Updated on \today. References available upon request.}
+	
+	% Publications from a BibTeX file without multibib
+	%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+	%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+%	\nocite{*}
+%	\bibliographystyle{plain}
+%	\bibliography{publications}                        % 'publications' is the name of a BibTeX file
+	
+	% Publications from a BibTeX file using the multibib package
+	%\section{Publications}
+	%\nocitebook{book1,book2}
+	%\bibliographystylebook{plain}
+	%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+	%\nocitemisc{misc1,misc2,misc3}
+	%\bibliographystylemisc{plain}
+	%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+	
+	%-----       letter       ---------------------------------------------------------
+	
+\end{document}
+
+
+%% end of file `template.tex'.
